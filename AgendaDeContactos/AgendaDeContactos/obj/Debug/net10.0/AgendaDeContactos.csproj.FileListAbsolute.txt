@@ -1,0 +1,15 @@
+D:\DAW\PrimerTrimestre\ES\Clase\PrimeraPractica - Agenda\AgendaDeContactos\AgendaDeContactos\bin\Debug\net10.0\AgendaDeContactos.exe
+D:\DAW\PrimerTrimestre\ES\Clase\PrimeraPractica - Agenda\AgendaDeContactos\AgendaDeContactos\bin\Debug\net10.0\AgendaDeContactos.deps.json
+D:\DAW\PrimerTrimestre\ES\Clase\PrimeraPractica - Agenda\AgendaDeContactos\AgendaDeContactos\bin\Debug\net10.0\AgendaDeContactos.runtimeconfig.json
+D:\DAW\PrimerTrimestre\ES\Clase\PrimeraPractica - Agenda\AgendaDeContactos\AgendaDeContactos\bin\Debug\net10.0\AgendaDeContactos.dll
+D:\DAW\PrimerTrimestre\ES\Clase\PrimeraPractica - Agenda\AgendaDeContactos\AgendaDeContactos\bin\Debug\net10.0\AgendaDeContactos.pdb
+D:\DAW\PrimerTrimestre\ES\Clase\PrimeraPractica - Agenda\AgendaDeContactos\AgendaDeContactos\obj\Debug\net10.0\AgendaDeContactos.GeneratedMSBuildEditorConfig.editorconfig
+D:\DAW\PrimerTrimestre\ES\Clase\PrimeraPractica - Agenda\AgendaDeContactos\AgendaDeContactos\obj\Debug\net10.0\AgendaDeContactos.AssemblyInfoInputs.cache
+D:\DAW\PrimerTrimestre\ES\Clase\PrimeraPractica - Agenda\AgendaDeContactos\AgendaDeContactos\obj\Debug\net10.0\AgendaDeContactos.AssemblyInfo.cs
+D:\DAW\PrimerTrimestre\ES\Clase\PrimeraPractica - Agenda\AgendaDeContactos\AgendaDeContactos\obj\Debug\net10.0\AgendaDeContactos.csproj.CoreCompileInputs.cache
+D:\DAW\PrimerTrimestre\ES\Clase\PrimeraPractica - Agenda\AgendaDeContactos\AgendaDeContactos\obj\Debug\net10.0\AgendaDeContactos.sourcelink.json
+D:\DAW\PrimerTrimestre\ES\Clase\PrimeraPractica - Agenda\AgendaDeContactos\AgendaDeContactos\obj\Debug\net10.0\AgendaDeContactos.dll
+D:\DAW\PrimerTrimestre\ES\Clase\PrimeraPractica - Agenda\AgendaDeContactos\AgendaDeContactos\obj\Debug\net10.0\refint\AgendaDeContactos.dll
+D:\DAW\PrimerTrimestre\ES\Clase\PrimeraPractica - Agenda\AgendaDeContactos\AgendaDeContactos\obj\Debug\net10.0\AgendaDeContactos.pdb
+D:\DAW\PrimerTrimestre\ES\Clase\PrimeraPractica - Agenda\AgendaDeContactos\AgendaDeContactos\obj\Debug\net10.0\AgendaDeContactos.genruntimeconfig.cache
+D:\DAW\PrimerTrimestre\ES\Clase\PrimeraPractica - Agenda\AgendaDeContactos\AgendaDeContactos\obj\Debug\net10.0\ref\AgendaDeContactos.dll
