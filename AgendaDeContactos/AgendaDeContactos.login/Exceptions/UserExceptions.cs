@@ -23,4 +23,6 @@ public class UserExceptions : IException
         new("Invalid password", HttpStatusCode.BadRequest);
     public static readonly UserExceptions INCORRECT_PASSWORD = 
         new("Incorrect password", HttpStatusCode.Unauthorized);
+    public static readonly UserExceptions ERROR_IN_THE_FIELD =
+        new("Validation error in a field: ", HttpStatusCode.BadRequest);
 }

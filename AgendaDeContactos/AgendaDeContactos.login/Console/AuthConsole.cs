@@ -31,7 +31,7 @@ public class AuthConsole
 
             if (username == "0") return null;
                 
-            System.Console.WriteLine("Ingrese una contraseña: (Debe empezar con una letra, usar solo letras y números y tener entre 4 a 10 caracteres)");
+            System.Console.WriteLine("Ingrese una contraseña: (Debe contener al menos una letra mayúscula, un número y tener 6 o más caracteres)");
             password = System.Console.ReadLine();
             
             // Crear usuario
@@ -41,10 +41,11 @@ public class AuthConsole
                         username, 
                         password
                     );
-                return new CreateResponseDto(
+                CreateResponseDto response = new CreateResponseDto(
                     "Usuario creado correctamente",
                     HttpStatusCode.Created
                 );
+                return response;
             }
             catch (GeneralException<UserExceptions> ex)
             {

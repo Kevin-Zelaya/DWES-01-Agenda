@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AgendaDeContactos.login")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8c0b5680530a741ab89db8d6a8f192bee4f1eb8a")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+98e2399aea4fa7a989155521a7aad1aa84af43c9")]
 [assembly: System.Reflection.AssemblyProductAttribute("AgendaDeContactos.login")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AgendaDeContactos.login")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

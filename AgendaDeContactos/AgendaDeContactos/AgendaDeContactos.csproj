@@ -9,10 +9,11 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <Folder Include="Console\" />
-      <Folder Include="Business\" />
-      <Folder Include="Data\Entities\" />
-      <Folder Include="Data\Repository\" />
+      <PackageReference Include="Microsoft.Data.Sqlite" Version="10.0.12" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\AgendaDeContactos.login\AgendaDeContactos.login.csproj" />
     </ItemGroup>
 
 </Project>

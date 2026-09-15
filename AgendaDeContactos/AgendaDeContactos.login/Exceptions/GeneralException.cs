@@ -10,4 +10,10 @@ public class GeneralException<T> : Exception where T : IException
     {
         httpCode = error.httpCode;
     }
+    // Sobrecarga para errores con los campos de los contactos
+    public GeneralException(T error, string field)
+        : base(error.message+field)
+    {
+        httpCode = error.httpCode;
+    }
 }

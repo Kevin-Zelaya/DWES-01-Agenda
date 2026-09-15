@@ -10,8 +10,8 @@ public class SqliteRawRepository : IRepository
 {
     public SqliteRawRepository()
     {
-        _databasePath = GetDatabasePath();
-        createDatabase();
+        _databasePath = GetDatabasePath(); // Obtener la ruta del archivo .db
+        createDatabase(); // Si no existe, crea la base de datos
     }
     public void createDatabase() 
     {
@@ -39,7 +39,7 @@ public class SqliteRawRepository : IRepository
             System.Console.WriteLine($"Error en la ruta contenedora: {projectInfo.FullName}");
         }
         // Buscar directorio repository
-        String repositoryPath = Path.Combine(projectInfo.FullName, "Repository");
+        String repositoryPath = Path.Combine(projectInfo.FullName, "Repository"); // úne la ruta agregandole el directorio "Repository al final"
 
         if (!Directory.Exists(repositoryPath)) // Comprobar si repository existe
         {
@@ -50,7 +50,7 @@ public class SqliteRawRepository : IRepository
         
         return $"Data Source={databasePath}"; // retorna algo parecido a ./repository/database.db
     } 
-
+    // Crear usuario
     public void create(User user)
     {
         using (var conexion = new SqliteConnection(_databasePath))
@@ -59,13 +59,14 @@ public class SqliteRawRepository : IRepository
             string query = "INSERT INTO Users (username, password) VALUES (@username, @password)";
             using (var command = new SqliteCommand(query, conexion))
             {
+                // Agrega parametros al comando
                 command.Parameters.AddWithValue("@username", user.getUsername());
                 command.Parameters.AddWithValue("@password", user.getPassword());
-                command.ExecuteNonQuery();
+                command.ExecuteNonQuery(); // ejecuta la consulta
             }
         }
     }
-
+    // Eliminar usuario
     public void delete(User user)
     {
         using (var conexion = new SqliteConnection(_databasePath))
@@ -74,12 +75,13 @@ public class SqliteRawRepository : IRepository
             string query = "DELETE FROM Users WHERE Username = @username";
             using (var command = new SqliteCommand(query, conexion))
             {
+                // Agrega parametros al comando
                 command.Parameters.AddWithValue("@Username", user.getUsername());
                 command.ExecuteNonQuery();
             }
         }
     }
-
+    // Actualizar usuario
     public void update(User user)
     {
         using (var conexion = new SqliteConnection(_databasePath))
@@ -88,6 +90,7 @@ public class SqliteRawRepository : IRepository
             string query = "UPDATE Users SET password = @password, username = @username WHERE Id = @id";
             using (var command = new SqliteCommand(query, conexion))
             {
+                // Agrega parametros al comando
                 command.Parameters.AddWithValue("@username", user.getUsername());
                 command.Parameters.AddWithValue("@password", user.getPassword());
                 command.Parameters.AddWithValue("@password", user.getId());
@@ -95,7 +98,7 @@ public class SqliteRawRepository : IRepository
             }
         }
     }
-
+    // Obtener por id
     public User getById(int id)
     {
         using (var conexion = new SqliteConnection(_databasePath))
@@ -117,7 +120,7 @@ public class SqliteRawRepository : IRepository
 
         return null;
     }
-    
+    // Obtener por username
     public User GetByUsername(string username)
     {
         using (var conexion = new SqliteConnection(_databasePath))
@@ -139,10 +142,10 @@ public class SqliteRawRepository : IRepository
 
         return null;
     }
-    
+    // obtener todos los usuarios, no se utiliza durante la ejecución
     public IEnumerable<User> getAll()
     {
-        var lista = new List<User>();
+        var list = new List<User>();
         using (var conexion = new SqliteConnection(_databasePath))
         {
             conexion.Open();
@@ -152,13 +155,13 @@ public class SqliteRawRepository : IRepository
             {
                 while (reader.Read())
                 {
-                   lista.Add(new User
+                   list.Add(new User
                        (reader.GetInt32(0),reader.GetString(1), reader.GetString(2))
                    );
                 }
             }
         }
-        return lista;
+        return list;
     }
 
     private string _databasePath = "";
